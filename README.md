@@ -15,9 +15,11 @@ The objective is to develop an Whisper-based audio model to identify speech impa
 ## Methodology 
 The whole process includes data processing, setting up a Whisper encoder, and training a neural network for classification.
 ### Data Processing
-Since Whisper model prefers the sampling rate to be 16kHz and files to be wav format, in the process of data processing, each of the audio files were resampled into 16kHz and converted into wav format from mp3 format. 
+Since the Whisper model prefers the sampling rate to be 16kHz and files to be in wav format, each of the audio files was resampled into 16kHz and converted into wav format from mp3 format in the data processing process. 
 ### Whisper Encoder 
 The whisper models include whisper-base, whisper-small-whisper-medium and whisper-large-v2[12]. Each encoder processed the audio training data and then passed the results into a neural network classifier. 
+### Neural Network
+The neural network includes a series of linear and Rectified Linear Unit (ReLU) Layers. AdamW was used for optimization and cross-entropy was used for loss. The validation set was evaluated before the test dataset was evaluated. 
 
 ## Data 
 
