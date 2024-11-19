@@ -10,7 +10,7 @@ Cleft palate is a craniofacial disorder that affects roughly 1 in 700 live birth
 Diagnosing hypernasality requires evaluation by a speech-language pathologist, the result of which leads to interventions such as additional surgery or speech therapy [10]. However, accessing this diagnosis is often challenging for patients in low-income settings or regions with limited healthcare resources [11]. As a result, this project seeks to leverage OpenAI's Whisper audio model to detect hypernasality in audio samples of these patients, which can facilitate their access to speech pathology services. The results have shown that the proposed model has a test accuracy of 97% and an F1 score of 0.97. Future work includes testing the model on protected patient data from Vanderbilt University Medical Center (VUMC) and extending its application to non-English languages.
 
 ## Goal
-The objective is to develop an audio model to identify speech impairments.
+The objective is to develop an Whisper-based audio model to identify speech impairments.
 
 ## Features
 1. Web Interface: The model will be deployable via a user-friendly web application, accessible for testing and usage.
@@ -69,22 +69,18 @@ Consideration should be given to augmenting the current model by integrating it 
 
 [Time Series Forecasting](https://www.tableau.com/learn/articles/time-series-forecasting)
 
-## Citation
-[1] Peter A. Mossey and Eduardo Castilla. 2003. Global Registry and Database on Craniofacial Anomalies: Report of a WHO Registry Meeting on
-Craniofacial Anomalies. World Health Organization.
-[2] Hardin-Jones, M. A., & Jones, D. L. 2005. Speech production of preschoolers with cleft palate. The Cleft Palate-Craniofacial Journal, 42(1), 7–13.
-[3] M Iglesias, A., D.P. Kuehn, and H.L. Morris (1980). Simultaneous assessment of pharyngeal wall and velar displacement for selected speech
-sounds. J Speech Hear Res, 1980. 23(2): p. 429-46.
-[4] Chiang, S.N., et al. 2023. "Buccal Myomucosal Flap Repair for Velopharyngeal Dysfunction.". Plast Reconstr Surg.
-[5] Ysunza, A., et al. 2002. Velopharyngeal surgery: a prospective randomized study of pharyngeal flaps and sphincter pharyngoplasties. Plast
-Reconstr Surg, 110(6): p. 1401-7.
-[6] Naran, S., M. Ford, and J.E. Losee. 2017. What's New in Cleft Palate and Velopharyngeal Dysfunction Management? Plast Reconstr Surg. 139(6):
-p. 1343e-1355e.
-[7] Jackson, O., et al. 2013. The Children's Hospital of Philadelphia modification of the Furlow double-opposing Z-palatoplasty: 30-year experience
-and long-term speech outcomes. Plast Reconstr Surg, 132(3): p. 613-622.
-[8] D’Antonio, L.L. and N.J. Scherer. 2009. Communication disorders associated with cleft palate, in Comprehensive Cleft Care, J.E. Losee and R.E. Kirschner, Editors., McGraw-Hill Medical: New York. p. 569-588.
-[9] Fisher, D.M. and B.C. Sommerlad. 2011. Cleft lip, cleft palate, and velopharyngeal insufficiency. Plast Reconstr Surg, 128(4): p. 342e-360e.
-[10] Parameters For Evaluation and Treatment of Patients With Cleft Lip/Palate or Other Craniofacial Differences. 2018. The Cleft palatecraniofacial journal: official publication of the American Cleft Palate-Craniofacial Association, 55(1), 137–156. DOI: https://doi.org/10.1177/1055665617739564
-[11] Baigorri, M, et al. 2021. Barriers and Resources to Cleft Lip and Palate Speech Services Globally: A Descriptive Study. Journal of Craniofacial Surgery, 32(8), 2802–2807. DOI: 10.1097/SCS.0000000000007988
+## References
+Peter A. Mossey and Eduardo Castilla. Global Registry and Database on Craniofacial Anomalies: Report of a WHO Registry Meeting on Craniofacial Anomalies. World Health Organization, 2003.
+M. A. Hardin-Jones and D. L. Jones. "Speech production of preschoolers with cleft palate." The Cleft Palate-Craniofacial Journal, vol. 42, no. 1, pp. 7–13, 2005.
+M. Iglesias, D. P. Kuehn, and H. L. Morris. "Simultaneous assessment of pharyngeal wall and velar displacement for selected speech sounds." J Speech Hear Res, vol. 23, no. 2, pp. 429–46, 1980.
+S. N. Chiang, et al. "Buccal Myomucosal Flap Repair for Velopharyngeal Dysfunction." Plast Reconstr Surg, 2023.
+A. Ysunza, et al. "Velopharyngeal surgery: a prospective randomized study of pharyngeal flaps and sphincter pharyngoplasties." Plast Reconstr Surg, vol. 110, no. 6, pp. 1401–7, 2002.
+S. Naran, M. Ford, and J. E. Losee. "What's New in Cleft Palate and Velopharyngeal Dysfunction Management?" Plast Reconstr Surg, vol. 139, no. 6, pp. 1343e–1355e, 2017.
+O. Jackson, et al. "The Children's Hospital of Philadelphia modification of the Furlow double-opposing Z-palatoplasty: 30-year experience and long-term speech outcomes." Plast Reconstr Surg, vol. 132, no. 3, pp. 613–622, 2013.
+L. L. D’Antonio and N. J. Scherer. "Communication disorders associated with cleft palate," in Comprehensive Cleft Care, J. E. Losee and R. E. Kirschner, Eds. McGraw-Hill Medical, New York, 2009, pp. 569–588.
+D. M. Fisher and B. C. Sommerlad. "Cleft lip, cleft palate, and velopharyngeal insufficiency." Plast Reconstr Surg, vol. 128, no. 4, pp. 342e–360e, 2011.
+Parameters For Evaluation and Treatment of Patients With Cleft Lip/Palate or Other Craniofacial Differences. The Cleft Palate-Craniofacial Journal, vol. 55, no. 1, pp. 137–156, 2018. DOI: 10.1177/1055665617739564.
+M. Baigorri, et al. "Barriers and Resources to Cleft Lip and Palate Speech Services Globally: A Descriptive Study." Journal of Craniofacial Surgery, vol. 32, no. 8, pp. 2802–2807, 2021. DOI: 10.1097/SCS.0000000000007988.
+OpenAI. "Whisper: Open-source model for speech recognition." Available: https://openai.com/research/whisper.
 
 
