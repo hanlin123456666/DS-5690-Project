@@ -5,9 +5,9 @@ Hanlin Chen
 hanlin.chen@vanderbilt.edu
 
 ## Introduction
-This project aims to harness the power of the Fourier transformer, a variant of the linear transformer architecture, to predict stock prices. 
-Utilizing advanced techniques in machine learning and signal processing, the Fourier transformer model in this project tackles the challenges of financial time-series forecasting. 
-By transforming time-series data into the frequency domain, the model captures underlying patterns and trends that are essential for accurate predictions.
+Cleft palate is a craniofacial disorder that affects roughly 1 in 700 live births worldwide and is typically addressed through surgical intervention [1]. However, even after corrective surgery, approximately 30% of patients continue to experience speech deficiencies, often necessitating a second surgery to enhance speech quality [2-9]. A common speech issue linked to corrected cleft palate is hypernasality, characterized by excessive nasal resonance during speech [1].
+
+Diagnosing hypernasality requires evaluation by a speech-language pathologist, the result of which leads to interventions such as additional surgery or speech therapy [10]. However, accessing this diagnosis is often challenging for patients in low-income settings or regions with limited healthcare resources [11]. As a result, this project seeks to leverage OpenAI's Whisper audio model to detect hypernasality in audio samples of these patients, which can facilitate their access to speech pathology services. The results have shown that the proposed model has a test accuracy of 97% and an F1 score of 0.97. Future work include testing the model on protected patient data from Vanderbilt University Medical Center (VUMC), and extending its application to non-English languages.
 
 ## Goal
 The objective is to develop an audio model to identify speech impairments.
