@@ -7,7 +7,7 @@ hanlin.chen@vanderbilt.edu
 ## Introduction
 Cleft palate is a craniofacial disorder that affects roughly 1 in 700 live births worldwide and is typically addressed through surgical intervention [1]. However, even after corrective surgery, approximately 30% of patients continue to experience speech deficiencies, often necessitating a second surgery to enhance speech quality [2-9]. A common speech issue linked to corrected cleft palate is hypernasality, characterized by excessive nasal resonance during speech [1].
 
-Diagnosing hypernasality requires evaluation by a speech-language pathologist, the result of which leads to interventions such as additional surgery or speech therapy [10]. However, accessing this diagnosis is often challenging for patients in low-income settings or regions with limited healthcare resources [11]. As a result, this project seeks to leverage OpenAI's Whisper audio model to detect hypernasality in audio samples of these patients, which can facilitate their access to speech pathology services. The results have shown that the proposed model has a test accuracy of 97% and an F1 score of 0.97. Future work includes testing the model on protected patient data from Vanderbilt University Medical Center (VUMC) and extending its application to non-English languages.
+Diagnosing hypernasality requires evaluation by a speech-language pathologist, the result of which leads to interventions such as additional surgery or speech therapy [10]. However, accessing this diagnosis is often challenging for patients in low-income settings or regions with limited healthcare resources [11]. As a result, this project seeks to leverage OpenAI's Whisper audio model to detect hypernasality in audio samples of these patients, which can facilitate their access to speech pathology services. The results have shown that the proposed model has a test accuracy of 97% and an F1 score of 0.97 on public online patient data. Future work includes testing the model on protected patient data from Vanderbilt University Medical Center (VUMC) and extending its application to non-English languages.
 
 ## Goal
 The objective is to develop an Whisper-based audio model to identify speech impairments.
@@ -15,13 +15,15 @@ The objective is to develop an Whisper-based audio model to identify speech impa
 ## Methodology 
 The whole process includes data processing, setting up a Whisper encoder, and training a neural network for classification.
 ### Data Processing
-Since the Whisper model prefers the sampling rate to be 16kHz and files to be in wav format, each of the audio files was resampled into 16kHz and converted into wav format from mp3 format in the data processing process. 
+Since the Whisper model prefers the sampling rate to be 16kHz and files to be in wav format, each of the audio files was resampled into 16kHz and converted into wav format from mp3 format in the data processing process. The wav format has higher resolution then mp3 format.
 ### Whisper Encoder 
 The whisper models include whisper-base, whisper-small-whisper-medium and whisper-large-v2[12]. Each encoder processed the audio training data and then passed the results into a neural network classifier. 
 ### Neural Network
 The neural network includes a series of linear and Rectified Linear Unit (ReLU) Layers. AdamW was used for optimization and cross-entropy was used for loss. The validation set was evaluated before the test dataset was evaluated. 
 
-## Data 
+## Dataset
+The data are publicly available patient voices from web-based sources, such as the Center for Disease Control and Prevention website. It includes 184 mp3 files, all of which are patient voice samples. 88 of the samples belong to the control group, which are patients without hypernasality and 96 of them are from the case group, which are patients with hypernasality. The audio samples have a duration from 0.44 to 9.35 seconds. 
+The samples were 
 
 ## Results
 
