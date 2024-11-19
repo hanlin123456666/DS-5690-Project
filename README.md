@@ -12,12 +12,14 @@ Diagnosing hypernasality requires evaluation by a speech-language pathologist, t
 ## Goal
 The objective is to develop an Whisper-based audio model to identify speech impairments.
 
-## Features
-1. Web Interface: The model will be deployable via a user-friendly web application, accessible for testing and usage.
-2. Phone Interface: Users can interact with the model globally through a phone line. By calling a designated number, users can record voice samples and receive analytical feedback
-
 ## Methodology 
-![image](https://github.com/Zoliverling/Linear_Transformation/assets/106001844/d388e504-b32d-4d31-80f1-8a5f274d6f28)
+The whole process includes data processing, setting up a Whisper encoder, and training a neural network for classification.
+### Whisper encoder 
+The whisper models include whisper-base, whisper-small-whisper-medium and whisper-large-v2[12]. Each encoder processed the audio training data and then passed the results into a neural network classifier. 
+
+## Data 
+
+## Results
 
 ### Traditional Transformer
 The traditional transformer architecture consists of an encoder and decoder structure, each comprising multiple layers that perform complex functions. At the heart of the encoder and decoder lies the multi-head attention mechanism, which allows the model to focus on different parts of the input sequence when predicting each part of the output sequence. Each layer follows a specific order: multi-head attention is followed by a normalization step and a feed-forward network, with another normalization step thereafter. This architecture is powerful but computationally intensive, especially for long sequences, due to the quadratic complexity of the self-attention mechanism.
@@ -81,5 +83,6 @@ Consideration should be given to augmenting the current model by integrating it 
 9. D. M. Fisher and B. C. Sommerlad. "Cleft lip, cleft palate, and velopharyngeal insufficiency." Plast Reconstr Surg, vol. 128, no. 4, pp. 342e–360e, 2011.
 10.Parameters For Evaluation and Treatment of Patients With Cleft Lip/Palate or Other Craniofacial Differences. The Cleft Palate-Craniofacial Journal, vol. 55, no. 1, pp. 137–156, 2018. DOI: 10.1177/1055665617739564.
 11.M. Baigorri, et al. "Barriers and Resources to Cleft Lip and Palate Speech Services Globally: A Descriptive Study." Journal of Craniofacial Surgery, vol. 32, no. 8, pp. 2802–2807, 2021. DOI: 10.1097/SCS.0000000000007988.
+12.Transformers Documentation: Whisper. HuggingFace. Retrieved from https://huggingface.co/docs/transformers/model_doc/whisper
 
 
