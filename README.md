@@ -23,7 +23,7 @@ The neural network includes a series of linear and Rectified Linear Unit (ReLU) 
 
 ## Dataset
 The data are publicly available patient voices from web-based sources, such as the Center for Disease Control and Prevention website. It includes 184 mp3 files, all of which are patient voice samples. 88 of the samples belong to the control group, which are patients without hypernasality and 96 of them are from the case group, which are patients with hypernasality. The audio samples have a duration from 0.44 to 9.35 seconds. 
-The samples were 
+The samples were separated into train and test sets. In total, the training set included 5.65 minutes of audio samples. 
 
 ## Results
 
@@ -90,5 +90,14 @@ Consideration should be given to augmenting the current model by integrating it 
 10.Parameters For Evaluation and Treatment of Patients With Cleft Lip/Palate or Other Craniofacial Differences. The Cleft Palate-Craniofacial Journal, vol. 55, no. 1, pp. 137–156, 2018. DOI: 10.1177/1055665617739564.
 11.M. Baigorri, et al. "Barriers and Resources to Cleft Lip and Palate Speech Services Globally: A Descriptive Study." Journal of Craniofacial Surgery, vol. 32, no. 8, pp. 2802–2807, 2021. DOI: 10.1097/SCS.0000000000007988.
 12.Transformers Documentation: Whisper. HuggingFace. Retrieved from https://huggingface.co/docs/transformers/model_doc/whisper
+13.Prevention, C.f.D.C.a. CDC’s Developmental Milestones. 2023 June 6, 2023; Retrieved from: https://www.cdc.gov/ncbddd/actearly/milestones/index.html.
+14. Unit, E.O.H. Let’s Talk: Tips for Building Your Child’s Speech and Language Skills. Retrieved from: https://www.youtube.com/watch?v=K0aHjxzDb7I.
+15. ENT, F. What is VPI (Velopharyngeal Insufficiency)? ; Available from: https://www.youtube.com/watch?v=WM5fVCdBPHs.
+16. Learning, J.B. Hypernasality. Retrieved from: https://www.youtube.com/watch?v=KWz5_fpnZYc
+17. Khan, A., Farhan, M., & Ali, A. 2011. Speech Recognition: Increasing Efficiency of Support Vector Machines. International Journal of Computer Applications, 35(7). Retrieved from https://arxiv.org/ftp/arxiv/papers/1204/1204.4257.pdf.
+18. LEADERSproject. Cleft palate speech therapy using books for phrases and sentences. Retrieved from: https://www.youtube.com/watch?v=1nHhqdCnwBI.
+19. Chicago, S.C.s. New app may help kids with cleft palate speak easier. Retrieved from: https://www.youtube.com/watch?v=5fubZitvY-Q.
+20. Therapy, B.P.a.H. Case Study: Pediatric Speech Therapy for Cleft Palate. Retrieved from: https://www.youtube.com/watch?v=noUGRjClUg4.
+21.LEADERSproject. Cleft palate speech and feeding: addressing speech and language before surgery. Retrieved from: https://www.youtube.com/watch?v=-sEt3i0sHr4
 
 
