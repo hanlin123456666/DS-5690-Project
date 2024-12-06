@@ -85,10 +85,10 @@ However, on the test dataset, the model's performance showed some variance, with
 While the test results are slightly lower than the validation performance, the model remains effective and demonstrates a solid generalization capability.
 
 ## User-interface (Whisper small model)
-You can upload the audio file.
+1. run 2-Train_WhisperSmall.ipynb
+2. You can upload the audio file.
 ![image](https://github.com/user-attachments/assets/1a18f08c-8930-475b-9616-42bcceba7d0f)
-
-You click submit and get the result.
+3. You click submit and get the result.
 ![image](https://github.com/user-attachments/assets/1eb3618d-5d59-41de-a93a-990c02eab103)
 
 ## Additional Resources
