@@ -29,58 +29,17 @@ The samples were separated into train and test sets. In total, the training set 
 ## Results
 
 ### Whisper Tiny and neural network
+#### Code Demonstration 
+https://colab.research.google.com/drive/1zcZXUMFPH4aXdrtzKlfi4nM7Ugjm6600?usp=sharing
+
+#### Interpretation
 The evaluation of the model's performance on both validation and test datasets demonstrates a robust but slightly varied ability to classify the data accurately. During validation, the model achieved high and balanced precision, recall, and F1-scores of 0.91 across both classes, resulting in an overall accuracy of 91%. This suggests that the model is effective at distinguishing between the two classes and is well-calibrated on the validation data.
 ![image](https://github.com/user-attachments/assets/48921a91-9bb0-4e44-affc-62a757833ad3)
 
 However, on the test dataset, the model's performance showed some variance, with an overall accuracy of 86.5%. Class 0 exhibited a slightly lower recall (0.78) compared to precision (0.93), indicating that the model missed some true instances of this class. Conversely, Class 1 showed stronger recall (0.95) than precision (0.82), suggesting it captured most true instances but included more false positives. The F1-scores for Classes 0 and 1 were 0.85 and 0.88, respectively, with a macro average of 0.86 across both classes.
+![image](https://github.com/user-attachments/assets/2c3cbe7a-b285-470f-a033-aa675bb84992)
 
 While the test results are slightly lower than the validation performance, the model remains effective and demonstrates a solid generalization capability. The discrepancy suggests room for improvement, particularly in balancing precision and recall for both classes on unseen data. Overall, the model shows strong predictive capabilities and general reliability for this classification task.
-### Fourier Transformer
-The Fourier transformer is an innovative adaptation of the traditional transformer that replaces the multi-head attention mechanism with a Fourier transform-based approach. The key distinction lies in how the attention is computed:
-- Instead of calculating the attention weights for each element in the sequence with every other element (which is computationally expensive), the Fourier transform efficiently captures frequency-based relationships in the sequence.
-- This not only reduces the computational complexity but also allows the model to handle much longer sequences without a significant increase in computation time.
-- The feed-forward and normalization layers after the Fourier transform in the encoder remain unchanged, preserving the structure that enables complex representations.
-
-### LSTM
-Long Short-Term Memory (LSTM) networks are a special kind of Recurrent Neural Network (RNN) capable of learning long-term dependencies. LSTMs are explicitly designed to avoid the long-term dependency problem, remembering information for extended periods through their internal gates:
-- **Forget Gate:** Decides what information should be thrown away or kept.
-- **Input Gate:** Updates the cell state with new information.
-- **Cell State:** Carries relevant information throughout the processing of the sequence.
-- **Output Gate:** Decides what the next hidden state should be.
-
-### Comparison
-- **Computational Efficiency:** The Fourier transformer is computationally more efficient than the traditional transformer. By converting the attention mechanism into the frequency domain, it sidesteps the need for quadratic computation with respect to sequence length.
-- **Handling Long Sequences:** The Fourier transform's ability to work in the frequency domain means it can handle long-range dependencies and large sequences better than the traditional multi-head attention mechanism.
-- **Preserved Depth and Complexity:** Despite the simplification in attention calculation, the depth and complexity of the model remain intact. The feed-forward and normalization layers ensure that the model can still learn complex representations and perform sophisticated transformations on the input data.
-
-## Code Demonstration
-[Fourier Transformer](https://github.com/Zoliverling/Linear_Transformation/blob/main/Fourier_Transformer.py)
-
-[Code Demonstration](https://github.com/Zoliverling/Linear_Transformation/blob/main/Linear%20Transformer.ipynb)
-
-## Interactive Demonstration
-[Demo with Gradio](https://github.com/Zoliverling/Linear_Transformation/blob/main/stock_prediction.ipynb)
-
-
-## Critical Analysis and Future Directions
-### 1. Data Exploration Enhancement
-To further enhance the model's training efficacy, an in-depth exploration of additional datasets is recommended. This will not only enrich the model's learning base but also potentially uncover new patterns and insights that could improve predictive accuracy.
-
-### 2. Expansion to Diverse Application Fields
-Investigating the model's adaptability across various domains is advised. By exploring possible implementations in other fields, such as healthcare, energy, or retail, the utility and versatility of the model could be substantially increased, thereby broadening its application spectrum.
-
-### 3. Performance Optimization through Integration
-Consideration should be given to augmenting the current model by integrating it with other models or methods. This hybrid approach could leverage the strengths of multiple modeling techniques, potentially leading to significant improvements in performance metrics such as accuracy, speed, and robustness.
-
-
-## Useful Resources
-[A Financial Time-Series Prediction Model Based on MultiplexAttention and Linear Transformer Structure](https://www.mdpi.com/2076-3417/13/8/5175)
-
-[Forecasting Economics and Financial Time Series: ARIMA vs. LSTM](https://arxiv.org/abs/1803.06386)
-
-[Explore Attention Machanism](https://www.3blue1brown.com/lessons/attention)
-
-[Time Series Forecasting](https://www.tableau.com/learn/articles/time-series-forecasting)
 
 ## References
 1. Peter A. Mossey and Eduardo Castilla. Global Registry and Database on Craniofacial Anomalies: Report of a WHO Registry Meeting on Craniofacial Anomalies. World Health Organization, 2003.
