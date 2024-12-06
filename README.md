@@ -18,7 +18,7 @@ The process involves data preprocessing, Whisper encoder setup, neural network t
 ### Data Processing
 Since the Whisper model prefers the sampling rate to be 16kHz and files to be in wav format, each of the audio files was resampled into 16kHz and converted into wav format from mp3 format in the data processing process. The wav format has higher resolution then mp3 format.
 ### Whisper Encoder 
-The whisper models include whisper-base, whisper-small and whisper-tiny[12]. Each encoder processed the audio training data and then passed the results into a neural network classifier. 
+The whisper models used include whisper-base, whisper-small, and whisper-tiny[12]. Each encoder processed the audio training data and then passed the results into a neural network classifier. 
 ### Neural Network
 The neural network includes a series of linear and Rectified Linear Unit (ReLU) Layers. AdamW was used for optimization and cross-entropy was used for loss. The validation set was evaluated before the test dataset was evaluated. 
 
@@ -32,10 +32,10 @@ The samples were separated into train and test sets. In total, the training set 
 https://drive.google.com/file/d/1XvwIqfNyRLnLQzj3rf818f2ViB6QH0Nn/view?usp=sharing
 
 #### Interpretation
-The SVM model achieves an accuracy of 85% on validation data. Class 0 has a high precision of 93%, indicating that most of the predicted instances of this class are correct. However, its recall is slightly lower at 74%, meaning the model misses some true cases of class 0. This results in an F1-score of 0.82 for class 0, reflecting a good but not perfect balance between precision and recall. On the other hand, class 1 achieves a precision of 79% and a notably high recall of 95%, indicating the model captures most of the true instances of this class. The F1-score for class 1 is 0.86, slightly outperforming class 0. The macro average F1-score of 0.84 and the weighted average F1-score of 0.84 suggest balanced and reliable performance across both classes. Overall, the validation results indicate that the model performs well in distinguishing between the two classes.
+The SVM model achieves an accuracy of 85% on validation data. Class 0 has a high precision of 93%, indicating that most of the predicted instances of this class are correct. However, its recall is slightly lower at 74%, meaning the model misses some true cases of class 0. This results in an F1-score of 0.82 for class 0, reflecting a good but not perfect balance between precision and recall. On the other hand, class 1 achieves a precision of 79% and a notably high recall of 95%, indicating the model captures most of the true instances of this class. The F1-score for class 1 is 0.86, slightly outperforming class 0. The macro average F1-score of 0.84 and the weighted average F1-score of 0.84 suggest balanced and reliable performance across both classes. Overall, the validation results indicate that the model performs well in distinguishing the two classes.
 ![image](https://github.com/user-attachments/assets/2e493031-8911-4c66-b1fd-06d923f779b8)
 
-The SVM model’s performance on the test dataset reveals significant challenges, with an accuracy of 58.93%. While class 0 achieves perfect recall (1.00), its precision is only 59%, suggesting a high false positive rate, which inflates its F1-score to 0.74. In contrast, the model fails entirely for class 1, with both precision and recall at 0.00, resulting in an F1-score of 0.00. This indicates that the model predicts no instances of class 1 correctly, heavily favoring class 0 instead. The macro average F1-score drops to 0.37, and the weighted average F1-score is 0.44, emphasizing the imbalance in the model's predictions. The drastic drop in performance from validation to test suggests overfitting to the validation data or an inability to generalize well to the test data. 
+However, the SVM model’s performance on the test dataset reveals significant challenges, with an accuracy of 58.93%. While class 0 achieves perfect recall (1.00), its precision is only 59%, suggesting a high false positive rate, which inflates its F1-score to 0.74. In contrast, the model fails entirely for class 1, with both precision and recall at 0.00, resulting in an F1-score of 0.00. This indicates that the model predicts no instances of class 1 correctly, heavily favoring class 0 instead. The macro average F1-score drops to 0.37, and the weighted average F1-score is 0.44, emphasizing the imbalance in the model's predictions. The drastic drop in performance from validation to test suggests overfitting to the validation data or an inability to generalize well to the test data. 
 ![image](https://github.com/user-attachments/assets/8548740b-5610-4ac0-afd5-cfcf49da0988)
 
 ### Random Forest
@@ -58,7 +58,7 @@ The model demonstrates strong performance on the test dataset with an accuracy o
 ![image](https://github.com/user-attachments/assets/8db566b3-5ec2-48a2-894e-cca16eaee4b8)
 
 The validation dataset reveals weaker performance, with an accuracy of 70.27%. Class 0 achieves a precision of 0.89, suggesting that most predicted class 0 instances are correct, but the recall is much lower at 44%, indicating that the model misses a majority of true class 0 instances. This leads to an F1-score of 0.59, reflecting an imbalance in the model's ability to identify class 0 accurately. For class 1, the precision is 0.64, with a high recall of 95%, indicating the model correctly identifies most true class 1 instances but includes more false positives. The F1-score for class 1 is 0.77, significantly outperforming class 0. The macro and weighted averages for precision, recall, and F1-scores are lower than those for the test dataset, suggesting that the model's performance on the validation data is less consistent, particularly for class 0. These results indicate the need for further tuning to improve recall for class 0 while maintaining the strong recall for class 1.
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/66812a3b-0c3c-4100-9cc5-7fac6b6e7fc2)
 
 ### Whisper Small and neural network
 #### Code Demonstration 
@@ -83,6 +83,9 @@ However, on the test dataset, the model's performance showed some variance, with
 ![image](https://github.com/user-attachments/assets/2c3cbe7a-b285-470f-a033-aa675bb84992)
 
 While the test results are slightly lower than the validation performance, the model remains effective and demonstrates a solid generalization capability. The discrepancy suggests room for improvement, particularly in balancing precision and recall for both classes on unseen data. Overall, the model shows strong predictive capabilities and general reliability for this classification task.
+
+## User-interface
+![Uploading image.png…]()
 
 ## References
 1. Peter A. Mossey and Eduardo Castilla. Global Registry and Database on Craniofacial Anomalies: Report of a WHO Registry Meeting on Craniofacial Anomalies. World Health Organization, 2003.
