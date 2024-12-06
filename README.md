@@ -10,7 +10,7 @@ Cleft palate is a craniofacial disorder that affects roughly 1 in 700 live birth
 Diagnosing hypernasality requires evaluation by a speech-language pathologist, the result of which leads to interventions such as additional surgery or speech therapy [10]. However, accessing this diagnosis is often challenging for patients in low-income settings or regions with limited healthcare resources [11]. As a result, this project seeks to leverage OpenAI's Whisper audio model to detect hypernasality in audio samples of these patients, which can facilitate their access to speech pathology services. The results have shown that the proposed model has a test accuracy of 97% and an F1 score of 0.97 on public online patient data. Future work includes testing the model on protected patient data from Vanderbilt University Medical Center (VUMC) and extending its application to non-English languages.
 
 ## Goal
-The objective is to develop an Whisper-based audio model to identify speech impairments.
+The objective is to develop an Whisper-based audio model to detect hypernasality in audio samples of these patients.
 
 ## Methodology 
 The process involves data preprocessing, Whisper encoder setup, neural network training for classification, and a baseline SVM and random forest classifier.
