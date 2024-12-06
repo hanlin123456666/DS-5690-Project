@@ -91,15 +91,11 @@ You can upload the audio file.
 You click submit and get the result.
 ![image](https://github.com/user-attachments/assets/1eb3618d-5d59-41de-a93a-990c02eab103)
 
-## Resource links
-Research Papers and Articles:
+## Additional Resources
 - https://arxiv.org/ftp/arxiv/papers/1204/1204.4257.pdf
-Video resources
 - https://www.youtube.com/watch?v=1nHhqdCnwBI
-Repo
 - https://github.com/speechbrain/speechbrain
 - https://github.com/espnet/espnet
-Organizations and initiatives
 - https://www.nidcd.nih.gov/
 - https://www.asha.org/
   
