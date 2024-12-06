@@ -27,6 +27,27 @@ The data are publicly available patient voices from web-based sources, such as t
 The samples were separated into train and test sets. In total, the training set included 5.65 minutes of audio samples. 
 
 ## Results
+### SVM
+#### Code Demonstration 
+https://drive.google.com/file/d/1XvwIqfNyRLnLQzj3rf818f2ViB6QH0Nn/view?usp=sharing
+
+#### Interpretation
+The SVM model achieves an accuracy of 85% on validation data. Class 0 has a high precision of 93%, indicating that most of the predicted instances of this class are correct. However, its recall is slightly lower at 74%, meaning the model misses some true cases of class 0. This results in an F1-score of 0.82 for class 0, reflecting a good but not perfect balance between precision and recall. On the other hand, class 1 achieves a precision of 79% and a notably high recall of 95%, indicating the model captures most of the true instances of this class. The F1-score for class 1 is 0.86, slightly outperforming class 0. The macro average F1-score of 0.84 and the weighted average F1-score of 0.84 suggest balanced and reliable performance across both classes. Overall, the validation results indicate that the model performs well in distinguishing between the two classes.
+![image](https://github.com/user-attachments/assets/2e493031-8911-4c66-b1fd-06d923f779b8)
+
+The SVM model’s performance on the test dataset reveals significant challenges, with an accuracy of 58.93%. While class 0 achieves perfect recall (1.00), its precision is only 59%, suggesting a high false positive rate, which inflates its F1-score to 0.74. In contrast, the model fails entirely for class 1, with both precision and recall at 0.00, resulting in an F1-score of 0.00. This indicates that the model predicts no instances of class 1 correctly, heavily favoring class 0 instead. The macro average F1-score drops to 0.37, and the weighted average F1-score is 0.44, emphasizing the imbalance in the model's predictions. The drastic drop in performance from validation to test suggests overfitting to the validation data or an inability to generalize well to the test data. 
+![image](https://github.com/user-attachments/assets/8548740b-5610-4ac0-afd5-cfcf49da0988)
+
+### Random Forest
+#### Code Demonstration 
+https://drive.google.com/file/d/1XvwIqfNyRLnLQzj3rf818f2ViB6QH0Nn/view?usp=sharing
+
+#### Interpretation
+The model demonstrates excellent performance on the validation dataset, achieving an accuracy of 94.87%. Class 0 achieves perfect precision (1.00), meaning all predicted instances of class 0 are correct. Its recall, however, is slightly lower at 89%, indicating that some true instances of class 0 are missed. This results in an F1-score of 0.94, showcasing strong but slightly imbalanced performance. Conversely, class 1 achieves a precision of 91% and perfect recall (1.00), indicating the model captures all true instances of this class but has a few false positives. The F1-score for class 1 is 0.95, slightly outperforming class 0. The macro and weighted averages for precision, recall, and F1-score are all 0.95, reflecting balanced and robust performance across both classes. These results indicate that the model is well-calibrated and performs exceptionally well on the validation dataset, with only minor improvements needed for class 0's recall.
+![image](https://github.com/user-attachments/assets/b204d255-75f6-4b87-b032-5d52fc6ff22a)
+
+The model's performance on the test dataset drops significantly, with an accuracy of 60.71%, suggesting challenges in generalizing to unseen data. For class 0, the precision is 61%, and the recall is 94%, resulting in an F1-score of 0.74. This indicates that the model is effective at identifying the most true instances of class 0 but at the expense of a high false positive rate. In contrast, the model struggles significantly with class 1, achieving only 60% precision and a very low recall of 13%, leading to an F1 score of 0.21. This suggests that the model fails to capture the most true instances of class 1 and is heavily biased toward class 0. The macro average F1-score drops to 0.48, and the weighted average F1-score is 0.52, highlighting the imbalance in predictions and the poor generalization to the test dataset, similar to SVM.
+![image](https://github.com/user-attachments/assets/2722e826-3252-4ee1-9359-b88ee1293d5c)
 
 ### Whisper Tiny and neural network
 #### Code Demonstration 
