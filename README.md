@@ -96,7 +96,7 @@ While the test results are slightly lower than the validation performance, the m
 - Model Overview:
   - Type: Transformer-based neural network (Whisper encoder + custom classification head)
   - Objective: Detect hypernasality in patient voice samples.
-  - Dataset: 184 public voice samples (88 control, 96 case). Samples are labeled and preprocessed (16kHz, .wav format).
+  - Dataset: 184 public voice samples (88 control, 96 case). Samples are labeled and preprocessed (16kHz, .wav format). source(from the Center for Disease Control and Prevention website): https://drive.google.com/drive/folders/1T9KeV95lABeePdKwOuUGjfSnH604GTQs?usp=sharing
   - Performance: Validation: 93.33% accuracy, macro F1-score 0.93. Test: 91.89% accuracy, macro F1-score 0.92
 
 ## Additional Resources
