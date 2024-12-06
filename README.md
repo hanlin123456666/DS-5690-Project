@@ -86,9 +86,10 @@ While the test results are slightly lower than the validation performance, the m
 
 ## User-interface (Whisper small model)
 1. run 2-Train_WhisperSmall.ipynb
-2. You can upload the audio file.
+2. click the link given by the last cell: https://e906ba4e137bb92528.gradio.live
+3. You can upload the audio file.
 ![image](https://github.com/user-attachments/assets/1a18f08c-8930-475b-9616-42bcceba7d0f)
-3. You click submit and get the result.
+4. You click submit and get the result.
 ![image](https://github.com/user-attachments/assets/1eb3618d-5d59-41de-a93a-990c02eab103)
 
 ## Model Card
