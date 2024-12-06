@@ -58,7 +58,7 @@ The model demonstrates strong performance on the test dataset with an accuracy o
 ![image](https://github.com/user-attachments/assets/8db566b3-5ec2-48a2-894e-cca16eaee4b8)
 
 The validation dataset reveals weaker performance, with an accuracy of 70.27%. Class 0 achieves a precision of 0.89, suggesting that most predicted class 0 instances are correct, but the recall is much lower at 44%, indicating that the model misses a majority of true class 0 instances. This leads to an F1-score of 0.59, reflecting an imbalance in the model's ability to identify class 0 accurately. For class 1, the precision is 0.64, with a high recall of 95%, indicating the model correctly identifies most true class 1 instances but includes more false positives. The F1-score for class 1 is 0.77, significantly outperforming class 0. The macro and weighted averages for precision, recall, and F1-scores are lower than those for the test dataset, suggesting that the model's performance on the validation data is less consistent, particularly for class 0. These results indicate the need for further tuning to improve recall for class 0 while maintaining the strong recall for class 1.
-![image](https://github.com/user-attachments/assets/66812a3b-0c3c-4100-9cc5-7fac6b6e7fc2)
+![image](https://github.com/user-attachments/assets/1f398921-c503-4854-a4c8-106dae379c8d)
 
 ### Whisper Small and neural network
 #### Code Demonstration 
