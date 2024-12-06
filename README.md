@@ -104,7 +104,7 @@ Machine Learning Approaches for Speech Disorder Detection
 ## Impacts, insights, and next steps
 - Impact: This project has the potential to transform access to speech pathology services by providing an automated tool to detect hypernasality. It bridges the gap for patients in low-resource settings where access to speech-language pathologists is limited.
 
-- Reveals or Suggests: The project reveals that deep learning models like Whisper can adapt well to specific speech pathology tasks with minimal customization. It also highlights the importance of high-quality labeled data for achieving superior results. Moreover, the discrepancies between validation and test performances in certain models suggest that further data diversity is crucial for improving generalization.
+- Reveals or Suggests: The project reveals that deep learning models like Whisper can adapt well to specific speech pathology tasks with minimal customization. However, the discrepancies between validation and test performances in certain models suggest that further data diversity is crucial for improving generalization.
 
 - Next Steps:
 Expand Dataset: Incorporate real-world clinical data, including data from Vanderbilt University Medical Center (VUMC), to enhance generalizability.
