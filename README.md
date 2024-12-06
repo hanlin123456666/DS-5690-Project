@@ -107,8 +107,8 @@ Machine Learning Approaches for Speech Disorder Detection
 - Reveals or Suggests: The project reveals that deep learning models like Whisper can adapt well to specific speech pathology tasks with minimal customization. However, the discrepancies between validation and test performances in certain models suggest that further data diversity is crucial for improving generalization.
 
 - Next Steps:
-Expand Dataset: Incorporate real-world clinical data, including data from Vanderbilt University Medical Center (VUMC), to enhance generalizability.
-Non-English Languages: Adapt the model to support multiple languages to cater to diverse populations.
+1. Expand Dataset: Incorporate real-world clinical data, including data from Vanderbilt University Medical Center (VUMC), to enhance generalizability.
+2. Non-English Languages: Adapt the model to support multiple languages to cater to diverse populations.
 
 ## References
 1. Peter A. Mossey and Eduardo Castilla. Global Registry and Database on Craniofacial Anomalies: Report of a WHO Registry Meeting on Craniofacial Anomalies. World Health Organization, 2003.
