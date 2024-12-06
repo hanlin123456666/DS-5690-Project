@@ -13,7 +13,7 @@ Diagnosing hypernasality requires evaluation by a speech-language pathologist, t
 The objective is to develop an Whisper-based audio model to identify speech impairments.
 
 ## Methodology 
-The whole process includes data processing, setting up a Whisper encoder, and training a neural network for classification. The baseline which uses SVM and random forest to classify is also included.
+The process involves data preprocessing, Whisper encoder setup, neural network training for classification, and a baseline SVM and random forest classifier.
 
 ### Data Processing
 Since the Whisper model prefers the sampling rate to be 16kHz and files to be in wav format, each of the audio files was resampled into 16kHz and converted into wav format from mp3 format in the data processing process. The wav format has higher resolution then mp3 format.
@@ -28,9 +28,13 @@ The samples were separated into train and test sets. In total, the training set 
 
 ## Results
 
-### Traditional Transformer
-The traditional transformer architecture consists of an encoder and decoder structure, each comprising multiple layers that perform complex functions. At the heart of the encoder and decoder lies the multi-head attention mechanism, which allows the model to focus on different parts of the input sequence when predicting each part of the output sequence. Each layer follows a specific order: multi-head attention is followed by a normalization step and a feed-forward network, with another normalization step thereafter. This architecture is powerful but computationally intensive, especially for long sequences, due to the quadratic complexity of the self-attention mechanism.
+### Whisper Tiny and neural network
+The evaluation of the model's performance on both validation and test datasets demonstrates a robust but slightly varied ability to classify the data accurately. During validation, the model achieved high and balanced precision, recall, and F1-scores of 0.91 across both classes, resulting in an overall accuracy of 91%. This suggests that the model is effective at distinguishing between the two classes and is well-calibrated on the validation data.
+![image](https://github.com/user-attachments/assets/48921a91-9bb0-4e44-affc-62a757833ad3)
 
+However, on the test dataset, the model's performance showed some variance, with an overall accuracy of 86.5%. Class 0 exhibited a slightly lower recall (0.78) compared to precision (0.93), indicating that the model missed some true instances of this class. Conversely, Class 1 showed stronger recall (0.95) than precision (0.82), suggesting it captured most true instances but included more false positives. The F1-scores for Classes 0 and 1 were 0.85 and 0.88, respectively, with a macro average of 0.86 across both classes.
+
+While the test results are slightly lower than the validation performance, the model remains effective and demonstrates a solid generalization capability. The discrepancy suggests room for improvement, particularly in balancing precision and recall for both classes on unseen data. Overall, the model shows strong predictive capabilities and general reliability for this classification task.
 ### Fourier Transformer
 The Fourier transformer is an innovative adaptation of the traditional transformer that replaces the multi-head attention mechanism with a Fourier transform-based approach. The key distinction lies in how the attention is computed:
 - Instead of calculating the attention weights for each element in the sequence with every other element (which is computationally expensive), the Fourier transform efficiently captures frequency-based relationships in the sequence.
