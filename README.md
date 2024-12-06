@@ -95,10 +95,16 @@ While the test results are slightly lower than the validation performance, the m
 - Model Name: Whisper Small for Hypernasality Detection
 - Model Overview:
   - Type: Transformer-based neural network (Whisper encoder + custom classification head)
-  - Objective: Detect hypernasality in patient voice samples.
-  - Dataset: 184 public voice samples (88 control, 96 case). Samples are labeled and preprocessed (16kHz, .wav format). source(from the Center for Disease Control and Prevention website): https://drive.google.com/drive/folders/1T9KeV95lABeePdKwOuUGjfSnH604GTQs?usp=sharing
+  - Uses: Detect hypernasality in patient voice samples.
+  - Dataset: 184 public voice samples (88 control, 96 case). Samples are labeled and preprocessed (16kHz, .wav format).
+    - source (from the Center for Disease Control and Prevention website): https://drive.google.com/drive/folders/1T9KeV95lABeePdKwOuUGjfSnH604GTQs?usp=sharing
   - Performance: Validation: 93.33% accuracy, macro F1-score 0.93. Test: 91.89% accuracy, macro F1-score 0.92
-
+- Permissions:
+  - Dataset Usage: The dataset used is publicly available from CDC and used under the assumption that it complies with public data-sharing policies.
+  - Model Usage: The Whisper model is sourced from OpenAI under its licensing terms. 
+  - This model is intended for research and educational purposes and not for direct clinical decision-making without regulatory approval.
+- Source: https://drive.google.com/drive/folders/1VCo-tNh2MIElhDnDPesxtDMkxlK9-2sL?usp=sharing
+  
 ## Additional Resources
 - https://arxiv.org/ftp/arxiv/papers/1204/1204.4257.pdf
 - https://www.youtube.com/watch?v=1nHhqdCnwBI
