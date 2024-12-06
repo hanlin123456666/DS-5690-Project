@@ -85,7 +85,11 @@ However, on the test dataset, the model's performance showed some variance, with
 While the test results are slightly lower than the validation performance, the model remains effective and demonstrates a solid generalization capability. The discrepancy suggests room for improvement, particularly in balancing precision and recall for both classes on unseen data. Overall, the model shows strong predictive capabilities and general reliability for this classification task.
 
 ## User-interface
-![Uploading image.png…]()
+You can upload the audio file.
+![image](https://github.com/user-attachments/assets/1a18f08c-8930-475b-9616-42bcceba7d0f)
+
+You click submit and get the result.
+![image](https://github.com/user-attachments/assets/1eb3618d-5d59-41de-a93a-990c02eab103)
 
 ## References
 1. Peter A. Mossey and Eduardo Castilla. Global Registry and Database on Craniofacial Anomalies: Report of a WHO Registry Meeting on Craniofacial Anomalies. World Health Organization, 2003.
