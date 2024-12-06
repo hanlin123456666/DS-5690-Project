@@ -91,6 +91,14 @@ While the test results are slightly lower than the validation performance, the m
 3. You click submit and get the result.
 ![image](https://github.com/user-attachments/assets/1eb3618d-5d59-41de-a93a-990c02eab103)
 
+## Model Card
+- Model Name: Whisper Small for Hypernasality Detection
+- Model Overview:
+- Type: Transformer-based neural network (Whisper encoder + custom classification head)
+- Objective: Detect hypernasality in patient voice samples.
+- Dataset: 184 public voice samples (88 control, 96 case). Samples are labeled and preprocessed (16kHz, .wav format).
+- Performance: Validation: 93.33% accuracy, macro F1-score 0.93. Test: 91.89% accuracy, macro F1-score 0.92
+
 ## Additional Resources
 - https://arxiv.org/ftp/arxiv/papers/1204/1204.4257.pdf
 - https://www.youtube.com/watch?v=1nHhqdCnwBI
