@@ -49,6 +49,28 @@ The model demonstrates excellent performance on the validation dataset, achievin
 The model's performance on the test dataset drops significantly, with an accuracy of 60.71%, suggesting challenges in generalizing to unseen data. For class 0, the precision is 61%, and the recall is 94%, resulting in an F1-score of 0.74. This indicates that the model is effective at identifying the most true instances of class 0 but at the expense of a high false positive rate. In contrast, the model struggles significantly with class 1, achieving only 60% precision and a very low recall of 13%, leading to an F1 score of 0.21. This suggests that the model fails to capture the most true instances of class 1 and is heavily biased toward class 0. The macro average F1-score drops to 0.48, and the weighted average F1-score is 0.52, highlighting the imbalance in predictions and the poor generalization to the test dataset, similar to SVM.
 ![image](https://github.com/user-attachments/assets/2722e826-3252-4ee1-9359-b88ee1293d5c)
 
+### Whisper base and neural network
+#### Code Demonstration 
+https://drive.google.com/file/d/1XvwIqfNyRLnLQzj3rf818f2ViB6QH0Nn/view?usp=sharing
+
+#### Interpretation
+The model demonstrates strong performance on the test dataset with an accuracy of 84.44%. Class 0 achieves a perfect precision of 1.00, indicating that all instances predicted as class 0 are correct. However, the recall for class 0 is 68%, meaning the model misses a significant portion of true class 0 instances. This imbalance results in an F1-score of 0.81 for class 0. On the other hand, class 1 achieves a precision of 0.77 and a perfect recall of 1.00, showing that the model captures all true instances of class 1, albeit with some false positives. The F1-score for class 1 is 0.87, reflecting better overall performance than class 0. The macro averages for precision, recall, and F1-scores are 0.88, 0.84, and 0.84, respectively, indicating a slight favoring of class 1. Overall, the test results highlight the model's ability to generalize well while showing some room for improvement in class 0's recall.
+![image](https://github.com/user-attachments/assets/8db566b3-5ec2-48a2-894e-cca16eaee4b8)
+
+The validation dataset reveals weaker performance, with an accuracy of 70.27%. Class 0 achieves a precision of 0.89, suggesting that most predicted class 0 instances are correct, but the recall is much lower at 44%, indicating that the model misses a majority of true class 0 instances. This leads to an F1-score of 0.59, reflecting an imbalance in the model's ability to identify class 0 accurately. For class 1, the precision is 0.64, with a high recall of 95%, indicating the model correctly identifies most true class 1 instances but includes more false positives. The F1-score for class 1 is 0.77, significantly outperforming class 0. The macro and weighted averages for precision, recall, and F1-scores are lower than those for the test dataset, suggesting that the model's performance on the validation data is less consistent, particularly for class 0. These results indicate the need for further tuning to improve recall for class 0 while maintaining the strong recall for class 1.
+![Uploading image.png…]()
+
+### Whisper Small and neural network
+#### Code Demonstration 
+[https://colab.research.google.com/drive/1zcZXUMFPH4aXdrtzKlfi4nM7Ugjm6600?usp=sharing](https://colab.research.google.com/drive/1lHa0c4XX4eGBGlqXJg2YtNsxZpCHyzs2?usp=sharing)
+
+#### Interpretation
+The model demonstrates excellent performance on the validation dataset, achieving an accuracy of 93.33%. Class 0 has a precision of 95%, indicating that nearly all predictions for this class are correct, while its recall of 91% shows the model successfully identifies most true instances of class 0, though a few are missed. This balance results in an F1-score of 0.93. Class 1 performs similarly well, with a precision of 92% and a recall of 96%, reflecting the model’s ability to correctly classify most true instances of class 1 while maintaining high precision. The macro and weighted averages for precision, recall, and F1-scores are all 0.93, indicating consistent and balanced performance across both classes. These results suggest the model is well-calibrated and highly effective on the validation dataset, with minimal room for improvement.
+![image](https://github.com/user-attachments/assets/fd8d9e33-9062-483d-9bf3-2660030dc079)
+
+On the test dataset, the model continues to perform strongly, achieving an accuracy of 91.89%. Class 0 shows a precision of 89% and a recall of 94%, resulting in an F1-score of 0.92, demonstrating the model’s strong ability to classify most instances of this class correctly. Similarly, class 1 achieves a precision of 94% and a recall of 89%, with an F1-score of 0.92, reflecting balanced and robust performance. The macro and weighted averages for all metrics are 0.92, confirming that the model generalizes well to unseen data. Although there is a slight drop in performance from validation to test, the model still performs reliably, demonstrating strong predictive capabilities and consistent classification performance across both datasets.
+![image](https://github.com/user-attachments/assets/842c04e1-51be-461d-8c31-dfcc29ebd4e4)
+
 ### Whisper Tiny and neural network
 #### Code Demonstration 
 https://colab.research.google.com/drive/1zcZXUMFPH4aXdrtzKlfi4nM7Ugjm6600?usp=sharing
@@ -61,6 +83,8 @@ However, on the test dataset, the model's performance showed some variance, with
 ![image](https://github.com/user-attachments/assets/2c3cbe7a-b285-470f-a033-aa675bb84992)
 
 While the test results are slightly lower than the validation performance, the model remains effective and demonstrates a solid generalization capability. The discrepancy suggests room for improvement, particularly in balancing precision and recall for both classes on unseen data. Overall, the model shows strong predictive capabilities and general reliability for this classification task.
+
+
 
 ## References
 1. Peter A. Mossey and Eduardo Castilla. Global Registry and Database on Craniofacial Anomalies: Report of a WHO Registry Meeting on Craniofacial Anomalies. World Health Organization, 2003.
