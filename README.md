@@ -91,6 +91,25 @@ You can upload the audio file.
 You click submit and get the result.
 ![image](https://github.com/user-attachments/assets/1eb3618d-5d59-41de-a93a-990c02eab103)
 
+## Resource links
+Research Papers and Articles:
+- https://arxiv.org/ftp/arxiv/papers/1204/1204.4257.pdf
+Video resources
+- https://www.youtube.com/watch?v=1nHhqdCnwBI
+  
+Speech and Language Disorders in Cleft Palate
+Automatic Detection of Speech Disorders: Challenges and Techniques
+Machine Learning Approaches for Speech Disorder Detection
+
+## Impacts, insights, and next steps
+- Impact: This project has the potential to transform access to speech pathology services by providing an automated tool to detect hypernasality. It bridges the gap for patients in low-resource settings where access to speech-language pathologists is limited.
+
+- Reveals or Suggests: The project reveals that deep learning models like Whisper can adapt well to specific speech pathology tasks with minimal customization. It also highlights the importance of high-quality labeled data for achieving superior results. Moreover, the discrepancies between validation and test performances in certain models suggest that further data diversity is crucial for improving generalization.
+
+- Next Steps:
+Expand Dataset: Incorporate real-world clinical data, including data from Vanderbilt University Medical Center (VUMC), to enhance generalizability.
+Non-English Languages: Adapt the model to support multiple languages to cater to diverse populations.
+
 ## References
 1. Peter A. Mossey and Eduardo Castilla. Global Registry and Database on Craniofacial Anomalies: Report of a WHO Registry Meeting on Craniofacial Anomalies. World Health Organization, 2003.
 2. M. A. Hardin-Jones and D. L. Jones. "Speech production of preschoolers with cleft palate." The Cleft Palate-Craniofacial Journal, vol. 42, no. 1, pp. 7–13, 2005.
