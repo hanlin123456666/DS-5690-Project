@@ -96,11 +96,13 @@ Research Papers and Articles:
 - https://arxiv.org/ftp/arxiv/papers/1204/1204.4257.pdf
 Video resources
 - https://www.youtube.com/watch?v=1nHhqdCnwBI
+Repo
+- https://github.com/speechbrain/speechbrain
+- https://github.com/espnet/espnet
+Organizations and initiatives
+- https://www.nidcd.nih.gov/
+- https://www.asha.org/
   
-Speech and Language Disorders in Cleft Palate
-Automatic Detection of Speech Disorders: Challenges and Techniques
-Machine Learning Approaches for Speech Disorder Detection
-
 ## Impacts, insights, and next steps
 - Impact: This project has the potential to transform access to speech pathology services by providing an automated tool to detect hypernasality. It bridges the gap for patients in low-resource settings where access to speech-language pathologists is limited.
 
